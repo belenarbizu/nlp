@@ -33,10 +33,21 @@ Each notebook explores a different approach, from classical statistical methods 
 - Scikit-learn  
 - Gensim  
 - Transformers (Hugging Face)  
-- Jupyter Notebook  
+- Jupyter Notebook
+
+---
+
+## Results and Conclusion
+
+In this project, different approaches for **SMS spam detection** were compared:
+
+- **TF-IDF + SVM** achieved the **best overall performance** with **98.3% accuracy** and an **F1-score of 0.93**, showing that classical models combined with statistical text representations remain very competitive.  
+- **TF-IDF + Naive Bayes** also performed strongly (**97% accuracy**), confirming its effectiveness as a fast and reliable baseline for spam detection.  
+- **Word2Vec + Logistic Regression / SVM** delivered decent results (**95–96% accuracy**), although slightly below TF-IDF. This is likely because averaging embeddings does not fully capture the semantic and syntactic nuances of the messages.  
 
 ---
 
 ## Repository goal
 
 Compare different approaches to text representation in NLP, from traditional statistical methods to deep learning models, highlighting their strengths and limitations.
+Additionally, the repository includes a case study on SMS spam detection, where these approaches (TF-IDF and Word2Vec) are applied and compared in practice. This demonstrates how representation choices impact real-world text classification tasks.
